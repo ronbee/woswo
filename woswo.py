@@ -71,8 +71,8 @@ def main():
 
 	woswo = WOsWO( agg )
 
-	print "-- query: %s --" % args.query
-	for rr in woswo[ args.query ]:
+	print "-- query: %s --" % args.query.lower()
+	for rr in woswo[ args.query.lower() ]:
 		print "%s (%f)" % rr
 	print "--"
 
